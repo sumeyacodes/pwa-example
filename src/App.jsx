@@ -26,7 +26,9 @@ function App() {
         >
           <img src={appLogo} className="logo" alt="PWA Vite Logo" />
         </a>
-        <p className="read-the-docs">Click on the Vite logo to learn more</p>
+        <small className="read-the-docs">
+          Click on the Vite logo to learn more
+        </small>
       </footer>
       <PWABadge />
     </>
