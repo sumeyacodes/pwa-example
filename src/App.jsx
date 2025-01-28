@@ -1,0 +1,37 @@
+import { useState } from "react";
+import schoolOfCodeLogo from "/SOC-Logo.png";
+import reactLogo from "./assets/react.svg";
+import appLogo from "/favicon.svg";
+import PWABadge from "./PWABadge.jsx";
+import "./App.css";
+
+function App() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <>
+      <div>
+        <img src={schoolOfCodeLogo} className="logo soc" alt="SOC Logo" />
+      </div>
+      <h1>School of Code</h1>
+      <h2>This is an example of a PWA</h2>
+      <div className="card">
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+        </button>
+      </div>
+      <footer>
+        <a
+          href="https://vite-pwa-org.netlify.app/guide/scaffolding.html"
+          target="_blank"
+        >
+          <img src={appLogo} className="logo" alt="PWA Vite Logo" />
+        </a>
+        <p className="read-the-docs">Click on the Vite logo to learn more</p>
+      </footer>
+      <PWABadge />
+    </>
+  );
+}
+
+export default App;
