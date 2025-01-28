@@ -1,6 +1,5 @@
 import { useState } from "react";
 import schoolOfCodeLogo from "/SOC-Logo.png";
-import reactLogo from "./assets/react.svg";
 import appLogo from "/favicon.svg";
 import PWABadge from "./PWABadge.jsx";
 import "./App.css";
@@ -14,7 +13,7 @@ function App() {
         <img src={schoolOfCodeLogo} className="logo soc" alt="SOC Logo" />
       </div>
       <h1>School of Code</h1>
-      <h2>This is an example of a PWA</h2>
+      <h2>Created from a Vite PWA template</h2>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
